@@ -20,22 +20,19 @@ const About = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
-      username: '@voxcom',
+      href: 'https://github.com/Midhun1618',
       color: 'hover:bg-gray-800 hover:text-white',
     },
     {
       icon: Instagram,
       label: 'Instagram',
-      href: 'https://instagram.com',
-      username: '@voxcom',
+      href: 'https://www.instagram.com/midhunvox',
       color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 hover:text-white',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      username: 'Voxcom',
+      href: 'https://linkedin.com/midhun-kp',
       color: 'hover:bg-blue-600 hover:text-white',
     },
   ];
@@ -90,12 +87,12 @@ const About = () => {
             <div className="mx-auto max-w-3xl">
               <Card>
                 <CardHeader>
-                  <CardTitle>About Me</CardTitle>
+                  <CardTitle>About Develpoer</CardTitle>
                   <CardDescription>The story behind Voxcom</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    I'm a full-stack developer with a passion for creating meaningful digital experiences.
+                    I'm an Engineering student with a passion for creating meaningful digital experiences.
                     With expertise spanning voice technology, mobile development, and web applications,
                     I enjoy tackling diverse challenges and bringing ideas to life.
                   </p>

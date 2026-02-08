@@ -6,8 +6,7 @@ import { projects } from '@/data/projects';
 export const HeroSection = () => {
   const stats = [
     { icon: Package, label: 'Projects', value: projects.length },
-    { icon: FolderOpen, label: 'Categories', value: 5 },
-    { icon: Download, label: 'Downloads', value: '100k+' },
+    { icon: FolderOpen, label: 'Categories', value: 5 }
   ];
 
   return (
@@ -51,14 +50,14 @@ export const HeroSection = () => {
             </Button>
             <Button asChild variant="outline" size="lg" className="px-8">
               <Link to="/about">
-                About Me
+                Know the Developer
               </Link>
             </Button>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
+        <div className="mt-16 grid grid-cols-2 gap-4 md:gap-8 max-w-2xl mx-auto">
           {stats.map((stat) => (
             <div
               key={stat.label}

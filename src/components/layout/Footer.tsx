@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Github, Instagram, Linkedin, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Icon from '@/components/assets/voxcom_icon.png';
 
 export const Footer = () => {
   const scrollToTop = () => {
@@ -8,9 +9,9 @@ export const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Midhun1618', label: 'GitHub' },
+    { icon: Instagram, href: 'https://instagram.com/midhunvox', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/midhun-kp', label: 'LinkedIn' },
   ];
 
   return (
@@ -19,12 +20,15 @@ export const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary">
-                <span className="text-lg font-bold text-primary-foreground">V</span>
-              </div>
+            <Link to="/" className="flex items-center">
+                <img
+                  src={Icon}
+                  alt="Voxcom logo"
+                  className="h-8 w-8 object-contain"
+                />
               <span className="text-xl font-bold text-gradient">Voxcom</span>
             </Link>
+
             <p className="text-sm text-muted-foreground max-w-xs">
               Showcasing innovative projects across voice assistants, mobile apps, and web development.
             </p>
@@ -41,7 +45,7 @@ export const Footer = () => {
                 All Projects
               </Link>
               <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                About Me
+                About Developer
               </Link>
             </nav>
           </div>
@@ -69,7 +73,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 border-t pt-8">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Voxcom. All rights reserved.
+            © {new Date().getFullYear()} voxcom. All rights reserved.
           </p>
           <Button
             variant="outline"
