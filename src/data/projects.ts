@@ -236,31 +236,32 @@ export const projects: Project[] = [
     actionUrl: '#',
     reviews: [],
   },
-  {
-    id: 'ecommerce-website',
-    title: 'ShopFlow E-commerce',
-    description: 'A complete e-commerce website solution with product management, shopping cart, and payment integration. Built with modern technologies for fast and secure online shopping.',
-    shortDescription: 'Complete e-commerce solution with payments.',
-    category: 'website',
-    thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop',
-    images: [
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-    ],
-    rating: 4.6,
-    version: '2.3.0',
-    lastUpdated: '2024-01-19',
-    features: [
-      'Product catalog',
-      'Shopping cart',
-      'Secure payments',
-      'Order tracking',
-      'Admin dashboard',
-    ],
-    techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    actionType: 'use',
-    actionUrl: '#',
-    reviews: [],
-  },
+ {
+  id: 'vr-photobooth',
+  title: 'VR PhotoBooth',
+  description:
+    'A retro-styled Android photobooth app that captures a timed photo sequence, applies film grain and contrast effects, and generates a classic photobooth print with a slot-style slide-out animation.',
+  shortDescription: 'Retro Android photobooth with film grain and print animation.',
+  category: 'android',
+  thumbnail: '/thumbnails/vrphotobooth_mockup.png',
+  images: [
+  ],
+  rating: 4.7,
+  version: '1.0.0',
+  lastUpdated: '2024-02-08',
+  features: [
+    'Countdown-based photo capture',
+    'Film grain & contrast controls',
+    'Slot-style slide-out print animation',
+    'Automatic photobooth collage',
+    'Downloadable final image',
+  ],
+  techStack: ['Kotlin', 'CameraX', 'Android'],
+  actionType: 'download',
+  actionUrl: 'https://github.com/Midhun1618/release-file/releases/download/v1.1/VR-Photobooth.apk',
+  reviews: [],
+}
+
 ];
 
 export const getFeaturedProjects = () => projects.filter(p => p.featured);
