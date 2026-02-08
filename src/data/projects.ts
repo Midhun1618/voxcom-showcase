@@ -244,7 +244,7 @@ export const projects: Project[] = [
   shortDescription: 'Retro Android photobooth with film grain and print animation.',
   category: 'android',
   thumbnail: '/thumbnails/vrphotobooth_mockup.png',
-  images: [
+  images: ['/screenshots/mockup_1.png','/screenshots/mockup_2.png'
   ],
   rating: 4.7,
   version: '1.0.0',
