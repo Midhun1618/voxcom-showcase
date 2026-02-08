@@ -26,13 +26,13 @@ const About = () => {
     {
       icon: Instagram,
       label: 'Instagram',
-      href: 'https://www.instagram.com/midhunvox',
+      href: 'https://www.instagram.com/midhunvox?igsh=M2szM3VyOGIweGIz',
       color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 hover:text-white',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/midhun-kp',
+      href: 'https://linkedin.com/in/midhun-kp',
       color: 'hover:bg-blue-600 hover:text-white',
     },
   ];
