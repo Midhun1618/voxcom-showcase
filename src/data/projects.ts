@@ -135,7 +135,7 @@ export const projects: Project[] = [
     description: 'A full-stack repository intelligence platform that analyzes public GitHub repositories using deterministic metrics combined with AI-powered strategic interpretation. It evaluates health, risk exposure, development consistency, and evolution trends to generate actionable maintainability insights.',
     shortDescription: 'AI-powered GitHub repository health & risk analyzer.',
     category: 'website',
-    thumbnail: '/thumbnails/reposcope.png',
+    thumbnail: '/thumbnails/repsocope.png',
     images: [
       '/screenshots/reposcope_1.png','/screenshots/reposcope_2.png','/screenshots/reposcope_3.png',
     ],
