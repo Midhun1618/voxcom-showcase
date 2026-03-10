@@ -243,6 +243,53 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+  id: 'vox-desktop',
+  title: 'VOX – Desktop Productivity Dashboard',
+  description: 'VOX Desktop is the companion application to VOX Android, designed to create a synchronized cross-device productivity ecosystem. Built using Java, the desktop application provides a centralized productivity dashboard where users can monitor tasks, track Focus Index metrics, and synchronize data with their Android device in real time. The system also supports wake word detection and speech recognition, allowing users to execute commands and interact with the system hands-free while maintaining a seamless workflow.',
+  shortDescription: 'Voice-enabled desktop dashboard with real-time productivity sync.',
+  category: 'java',
+  thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+  images: [
+    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
+  ],
+  rating: 4.8,
+  downloads: 900,
+  version: '1.0.0',
+  lastUpdated: '2026-03-10',
+  features: [
+    'Secure pairing with VOX Android using unique code',
+    'Real-time task synchronization',
+    'Wake word detection for hands-free activation',
+    'Speech recognition for command execution',
+    'Voice-controlled productivity interactions',
+    'Focus Index productivity dashboard',
+    'Desktop and mobile cloud clipboard synchronization',
+    'Live task updates and activity monitoring',
+    'Minimal distraction-free interface'
+  ],
+  techStack: ['Java', 'Firebase', 'Whisper model', 'Porcupine Wake Word Engine'],
+  actionType: 'download',
+  actionUrl: 'https://github.com/Midhun1618/VOX-PC/releases/download/v1.0/VOX.exe',
+  reviews: [
+    {
+      id: '1',
+      author: 'Daniel R.',
+      rating: 5,
+      comment: 'Perfect companion for the VOX Android app. Sync works smoothly!',
+      date: '2026-03-07'
+    },
+    {
+      id: '2',
+      author: 'Nisha P.',
+      rating: 4,
+      comment: 'Voice commands make it super convenient while working.',
+      date: '2026-03-08'
+    }
+  ],
+  featured: true,
+},
+  {
     id: 'weather-android',
     title: 'SkyView Weather',
     description: 'A beautiful weather application for Android with accurate forecasts, radar maps, and severe weather alerts. Get detailed hourly and weekly forecasts with stunning visualizations.',
