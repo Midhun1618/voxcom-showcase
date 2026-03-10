@@ -137,7 +137,7 @@ export const projects: Project[] = [
     category: 'website',
     thumbnail: '/thumbnails/repsocope.png',
     images: [
-      '/screenshots/reposcope_1.png','/screenshots/reposcope_2.png','/screenshots/reposcope_3.png',
+      '/screenshots/reposcope_1.png', '/screenshots/reposcope_2.png', '/screenshots/reposcope_3.png',
     ],
     rating: 4.8,
     downloads: 5400,
@@ -165,6 +165,53 @@ export const projects: Project[] = [
     actionType: 'use',
     actionUrl: 'https://reposcope-for-dev.onrender.com',
     reviews: [],
+  },
+  {
+    id: 'vox-android',
+    title: 'VOX – Android Productivity System',
+    description: 'VOX is a voice-enabled productivity system designed to make task management measurable, time-bound, and intelligent. Built with Kotlin and Firebase, VOX allows users to create tasks using voice commands, track productivity using a Focus Index, and manage daily goals through a 24-hour task lifecycle. The app also includes real-time weather updates, reminders with notifications, secure cloud clipboard syncing, and device pairing using a unique code system.',
+    shortDescription: 'Voice-powered productivity system with measurable focus tracking.',
+    category: 'android',
+    thumbnail: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
+    ],
+    rating: 4.9,
+    downloads: 1200,
+    version: '1.0.0',
+    lastUpdated: '2026-03-10',
+    features: [
+      'Google Sign-In authentication',
+      'Custom username and avatar setup',
+      'Unique 6-character device pairing code',
+      'Voice-powered task creation',
+      '24-hour task expiry model',
+      'Focus Index productivity tracking',
+      'Real-time weather and time display',
+      'Smart reminders with notifications',
+      'Secure cloud clipboard syncing',
+    ],
+    techStack: ['Kotlin', 'Firebase Authentication', 'Firebase Firestore', 'Firebase Cloud Messaging'],
+    actionType: 'download',
+    actionUrl: 'https://github.com/Midhun1618/VOX-Android/releases/download/v1.1/VOX.apk',
+    reviews: [
+      {
+        id: '1',
+        author: 'Alex T.',
+        rating: 5,
+        comment: 'A very unique productivity system. The Focus Index idea is brilliant!',
+        date: '2026-03-05'
+      },
+      {
+        id: '2',
+        author: 'Priya K.',
+        rating: 4,
+        comment: 'Voice task creation makes it super fast to add tasks.',
+        date: '2026-03-06'
+      }
+    ],
+    featured: true,
   },
   {
     id: 'portfolio-website',
