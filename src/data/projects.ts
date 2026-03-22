@@ -179,7 +179,7 @@ export const projects: Project[] = [
     ],
     rating: 4.9,
     downloads: 1200,
-    version: '1.0.0',
+    version: '1.1.1',
     lastUpdated: '2026-03-10',
     features: [
       'Google Sign-In authentication',
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     ],
     techStack: ['Kotlin', 'Firebase Authentication', 'Firebase Firestore', 'Firebase Cloud Messaging'],
     actionType: 'download',
-    actionUrl: 'https://github.com/Midhun1618/VOX-Android/releases/download/v1.1/VOX.apk',
+    actionUrl: 'https://github.com/Midhun1618/VOX-Android/releases/download/v1.1.1/VOX.apk',
     reviews: [
       {
         id: '1',
