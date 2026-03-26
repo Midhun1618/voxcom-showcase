@@ -1,4 +1,4 @@
-export type ProjectCategory = 'voice-assistant' | 'android' | 'python' | 'java' | 'website' | 'game';
+export type ProjectCategory = 'voice-assistant' | 'android' | 'python' | 'java' | 'website' ;
 
 export interface ProjectReview {
   id: string;
@@ -35,7 +35,6 @@ export const categoryInfo: Record<ProjectCategory, { label: string; icon: string
   'python': { label: 'Python Apps', icon: 'Terminal', color: 'bg-yellow-100 text-yellow-700' },
   'java': { label: 'Java Apps', icon: 'Coffee', color: 'bg-orange-100 text-orange-700' },
   'website': { label: 'Websites', icon: 'Globe', color: 'bg-blue-100 text-blue-700' },
-  'game': { label: 'Game', icon: 'Joystick', color: 'bg-blue-200 text-blue-900' },
 };
 
 export const projects: Project[] = [
@@ -296,7 +295,7 @@ export const projects: Project[] = [
   title: 'RollingBall – Sensor-Based Android Game',
   description: 'RollingBall is a sensor-driven mobile game built using Kotlin for Android, where players control a ball through device tilt and acceleration. The game leverages real-time accelerometer input to simulate smooth and responsive physics-based movement. Players must navigate through challenging obstacles, maintain balance, and reach the final goal point to win. Designed with an intuitive control system and engaging gameplay, RollingBall demonstrates effective use of mobile sensors for interactive gaming experiences.',
   shortDescription: 'Tilt-controlled Android game with real-time sensor physics.',
-  category: 'game',
+  category: 'android',
   thumbnail: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&h=300&fit=crop',
   images: [
     'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=800&h=600&fit=crop',
