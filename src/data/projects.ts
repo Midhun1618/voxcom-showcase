@@ -1,4 +1,4 @@
-export type ProjectCategory = 'voice-assistant' | 'android' | 'python' | 'java' | 'website';
+export type ProjectCategory = 'voice-assistant' | 'android' | 'python' | 'java' | 'website' | 'game';
 
 export interface ProjectReview {
   id: string;
@@ -35,6 +35,7 @@ export const categoryInfo: Record<ProjectCategory, { label: string; icon: string
   'python': { label: 'Python Apps', icon: 'Terminal', color: 'bg-yellow-100 text-yellow-700' },
   'java': { label: 'Java Apps', icon: 'Coffee', color: 'bg-orange-100 text-orange-700' },
   'website': { label: 'Websites', icon: 'Globe', color: 'bg-blue-100 text-blue-700' },
+  'game': { label: 'Game', icon: 'Joystick', color: 'bg-blue-200 text-blue-900' },
 };
 
 export const projects: Project[] = [
@@ -60,7 +61,8 @@ export const projects: Project[] = [
       'Multi-language support',
       'Offline mode',
     ],
-    techStack: ['Python', 'TensorFlow', 'FastAPI', 'WebSocket'],
+
+    techStack: ['Python', 'pytts', 'Edge TTS', 'Tkinter'],
     actionType: 'download',
     actionUrl: '#',
     reviews: [
@@ -243,51 +245,95 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-  id: 'vox-desktop',
-  title: 'VOX – Desktop Productivity Dashboard',
-  description: 'VOX Desktop is the companion application to VOX Android, designed to create a synchronized cross-device productivity ecosystem. Built using Java, the desktop application provides a centralized productivity dashboard where users can monitor tasks, track Focus Index metrics, and synchronize data with their Android device in real time. The system also supports wake word detection and speech recognition, allowing users to execute commands and interact with the system hands-free while maintaining a seamless workflow.',
-  shortDescription: 'Voice-enabled desktop dashboard with real-time productivity sync.',
-  category: 'java',
-  thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+    id: 'vox-desktop',
+    title: 'VOX – Desktop Productivity Dashboard',
+    description: 'VOX Desktop is the companion application to VOX Android, designed to create a synchronized cross-device productivity ecosystem. Built using Java, the desktop application provides a centralized productivity dashboard where users can monitor tasks, track Focus Index metrics, and synchronize data with their Android device in real time. The system also supports wake word detection and speech recognition, allowing users to execute commands and interact with the system hands-free while maintaining a seamless workflow.',
+    shortDescription: 'Voice-enabled desktop dashboard with real-time productivity sync.',
+    category: 'java',
+    thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
+    ],
+    rating: 4.8,
+    downloads: 900,
+    version: '1.0.0',
+    lastUpdated: '2026-03-10',
+    features: [
+      'Secure pairing with VOX Android using unique code',
+      'Real-time task synchronization',
+      'Wake word detection for hands-free activation',
+      'Speech recognition for command execution',
+      'Voice-controlled productivity interactions',
+      'Focus Index productivity dashboard',
+      'Desktop and mobile cloud clipboard synchronization',
+      'Live task updates and activity monitoring',
+      'Minimal distraction-free interface'
+    ],
+    techStack: ['Java', 'Firebase', 'Whisper model', 'Porcupine Wake Word Engine'],
+    actionType: 'download',
+    actionUrl: 'https://github.com/Midhun1618/VOX-PC/releases/download/v1.0/VOX.exe',
+    reviews: [
+      {
+        id: '1',
+        author: 'Daniel R.',
+        rating: 5,
+        comment: 'Perfect companion for the VOX Android app. Sync works smoothly!',
+        date: '2026-03-07'
+      },
+      {
+        id: '2',
+        author: 'Nisha P.',
+        rating: 4,
+        comment: 'Voice commands make it super convenient while working.',
+        date: '2026-03-08'
+      }
+    ],
+    featured: true,
+  },
+  {
+  id: 'rolling-ball',
+  title: 'RollingBall – Sensor-Based Android Game',
+  description: 'RollingBall is a sensor-driven mobile game built using Kotlin for Android, where players control a ball through device tilt and acceleration. The game leverages real-time accelerometer input to simulate smooth and responsive physics-based movement. Players must navigate through challenging obstacles, maintain balance, and reach the final goal point to win. Designed with an intuitive control system and engaging gameplay, RollingBall demonstrates effective use of mobile sensors for interactive gaming experiences.',
+  shortDescription: 'Tilt-controlled Android game with real-time sensor physics.',
+  category: 'game',
+  thumbnail: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&h=300&fit=crop',
   images: [
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop',
   ],
-  rating: 4.8,
-  downloads: 900,
+  rating: 4.6,
+  downloads: 5200,
   version: '1.0.0',
-  lastUpdated: '2026-03-10',
+  lastUpdated: '2026-03-20',
   features: [
-    'Secure pairing with VOX Android using unique code',
-    'Real-time task synchronization',
-    'Wake word detection for hands-free activation',
-    'Speech recognition for command execution',
-    'Voice-controlled productivity interactions',
-    'Focus Index productivity dashboard',
-    'Desktop and mobile cloud clipboard synchronization',
-    'Live task updates and activity monitoring',
-    'Minimal distraction-free interface'
+    'Tilt-based ball control using accelerometer',
+    'Real-time physics simulation',
+    'Obstacle-based level design',
+    'Smooth and responsive gameplay',
+    'Win condition with goal-based navigation',
+    'Lightweight and optimized performance'
   ],
-  techStack: ['Java', 'Firebase', 'Whisper model', 'Porcupine Wake Word Engine'],
+  techStack: ['Kotlin', 'Android SDK', 'SensorManager', 'Accelerometer'],
   actionType: 'download',
-  actionUrl: 'https://github.com/Midhun1618/VOX-PC/releases/download/v1.0/VOX.exe',
+  actionUrl: 'https://github.com/Midhun1618/RollingBall/releases/download/v1.0/ROLLING.BALL.apk',
   reviews: [
     {
       id: '1',
-      author: 'Daniel R.',
+      author: 'Arjun K.',
       rating: 5,
-      comment: 'Perfect companion for the VOX Android app. Sync works smoothly!',
-      date: '2026-03-07'
+      comment: 'Simple yet addictive gameplay with smooth controls!',
+      date: '2026-03-18'
     },
     {
       id: '2',
-      author: 'Nisha P.',
+      author: 'Priya S.',
       rating: 4,
-      comment: 'Voice commands make it super convenient while working.',
-      date: '2026-03-08'
+      comment: 'Great use of device sensors, very responsive.',
+      date: '2026-03-19'
     }
   ],
-  featured: true,
+  featured: false,
 },
   {
     id: 'weather-android',
