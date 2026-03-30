@@ -303,7 +303,7 @@ export const projects: Project[] = [
   ],
   rating: 4.6,
   downloads: 5200,
-  version: '1.0.0',
+  version: '1.1.0',
   lastUpdated: '2026-03-20',
   features: [
     'Tilt-based ball control using accelerometer',
@@ -315,7 +315,7 @@ export const projects: Project[] = [
   ],
   techStack: ['Kotlin', 'Android SDK', 'SensorManager', 'Accelerometer'],
   actionType: 'download',
-  actionUrl: 'https://github.com/Midhun1618/RollingBall/releases/download/v1.0/ROLLING.BALL.apk',
+  actionUrl: 'https://github.com/Midhun1618/RollingBall/releases/download/v1.1/rollingball.apk',
   reviews: [
     {
       id: '1',
